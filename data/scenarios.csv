@@ -1,0 +1,4 @@
+scenario,probability,revenue_growth_1,revenue_growth_2,revenue_growth_3,revenue_growth_4,revenue_growth_5,fcf_margin_1,fcf_margin_2,fcf_margin_3,fcf_margin_4,fcf_margin_5,wacc,terminal_growth
+bear,0.20,0.07,0.07,0.065,0.06,0.055,0.45,0.45,0.455,0.455,0.46,0.085,0.025
+base,0.55,0.10,0.095,0.09,0.085,0.08,0.50,0.505,0.51,0.515,0.52,0.075,0.030
+bull,0.25,0.13,0.12,0.11,0.10,0.09,0.52,0.525,0.53,0.535,0.54,0.068,0.035
