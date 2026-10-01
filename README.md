@@ -53,3 +53,16 @@ The market price is an explicit runtime input so the repository never presents a
 ## Source discipline
 
 The seeded Visa historicals are drawn from Visa's FY2025 Form 10-K. Forecast assumptions, scenario probabilities, portfolio context, and market price are clearly labeled as investor inputs.
+
+## Decision outputs
+
+For a user-supplied market price, the case produces reverse-DCF embedded expectations, bull/base/bear valuation outcomes, probability-weighted expected return, downside diagnostics, a constrained position-size estimate, marginal portfolio-risk impact, and an explicit thesis-monitoring checklist. The objective is to make the chain from narrative to capital allocation auditable.
+
+## Validation
+
+Reported Visa historicals are stored separately from scenario assumptions. Tests cover valuation and sizing logic, while GitHub Actions runs the test suite and the reference case on every push and pull request. The market price remains a runtime input so the repository does not present a hard-coded quote as current.
+
+## Limitations
+
+DCF outputs remain sensitive to terminal assumptions, scenario probabilities are judgments rather than observed frequencies, and the sizing layer uses a simplified portfolio-risk approximation. The framework is a disciplined decision aid, not a claim that valuation uncertainty can be reduced to a single point estimate.
+
